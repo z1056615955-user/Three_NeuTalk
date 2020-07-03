@@ -1,2 +1,3 @@
-# Three_NeuTalk
-即时通讯
+# Three_NeuTalk即时通讯
+负责人：赵文奇
+
