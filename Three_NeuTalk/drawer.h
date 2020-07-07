@@ -19,6 +19,13 @@ private slots:
      void showChatWidget4();
      void showChatWidget5();
      void showChatWidget6();
+<<<<<<< HEAD
+=======
+     void showChatWidget7();
+     void showChatWidget8();
+     void showChatWidget9();
+     void showChatWidget10();//显示各个用户聊天窗口的函数
+>>>>>>> 2770f2ed5ad559978cdeddcf172a40aaa97620a8
 
      void slot_closeWindow();
 
