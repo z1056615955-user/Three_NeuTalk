@@ -16,17 +16,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    drawer.cpp \
     login.cpp \
     main.cpp \
-    register.cpp
+    register.cpp \
+    widget.cpp
 
 HEADERS += \
+    drawer.h \
     login.h \
-    register.h
+    register.h \
+    widget.h
 
 FORMS += \
     login.ui \
-    register.ui
+    register.ui \
+    widget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
