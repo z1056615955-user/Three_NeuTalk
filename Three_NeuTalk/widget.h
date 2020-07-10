@@ -13,7 +13,7 @@ class Widget : public QDialog
     Q_OBJECT
 
 public:
-    Widget(QWidget *parent = nullptr);
+    explicit Widget(QWidget *parent,QString usrname);
     ~Widget();
 
 private:

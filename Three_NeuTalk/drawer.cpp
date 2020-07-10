@@ -25,12 +25,12 @@ Drawer::Drawer(QString username,QWidget *parent,Qt::WindowFlags f) :
         toolBtn1->setAutoRaise(true);//自动浮起
         toolBtn1->setStyleSheet("color:white;font:14pt");
         toolBtn1->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-        if(username=="zhaowenqi")
-        {
-            is=true;
-            usersnumber=tr(":/images/User1.PNG");
+      //  if(username=="zhaowenqi")
+       // {
+           // is=true;
+           // usersnumber=tr(":/images/User1.PNG");
             connect(toolBtn1,SIGNAL(clicked()),this,SLOT(showChatWidget1()));
-        }
+       // }
 
 
     toolBtn2=new QToolButton;
@@ -41,12 +41,12 @@ Drawer::Drawer(QString username,QWidget *parent,Qt::WindowFlags f) :
     toolBtn2->setAutoRaise(true);//自动浮起
      toolBtn2->setStyleSheet("color:white;font:14pt");
     toolBtn2->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-    if(username=="yangsiyu")
-    {
-        is=true;
-        usersnumber=tr(":/images/User2.PNG");
+   // if(username=="yangsiyu")
+    //{
+        //is=true;
+        //usersnumber=tr(":/images/User2.PNG");
         connect(toolBtn2,SIGNAL(clicked()),this,SLOT(showChatWidget2()));
-    }
+   // }
 
     toolBtn3=new QToolButton;
       toolBtn3->resize(toolBtn1->size());
@@ -56,12 +56,12 @@ Drawer::Drawer(QString username,QWidget *parent,Qt::WindowFlags f) :
     toolBtn3->setAutoRaise(true);//自动浮起
      toolBtn3->setStyleSheet("color:white;font:14pt");
     toolBtn3->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-    if(username=="pansiwen")
-    {
-        is=true;
-        usersnumber=tr(":/images/User3.PNG");
+    //if(username=="pansiwen")
+    //{
+       // is=true;
+       // usersnumber=tr(":/images/User3.PNG");
         connect(toolBtn3,SIGNAL(clicked()),this,SLOT(showChatWidget3()));
-    }
+    //}
 
     toolBtn4=new QToolButton;
       toolBtn4->resize(toolBtn1->size());
@@ -71,12 +71,12 @@ Drawer::Drawer(QString username,QWidget *parent,Qt::WindowFlags f) :
     toolBtn4->setAutoRaise(true);//自动浮起
     toolBtn4->setStyleSheet("color:white;font:14pt");
     toolBtn4->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-    if(username=="panguangqiang")
-    {
-        is=true;
-        usersnumber=tr(":/images/User4.png");
+    //if(username=="panguangqiang")
+    //{
+       // is=true;
+       // usersnumber=tr(":/images/User4.png");
         connect(toolBtn4,SIGNAL(clicked()),this,SLOT(showChatWidget4()));
-    }
+   // }
 
     toolBtn5=new QToolButton;
       toolBtn5->resize(toolBtn1->size());
@@ -86,12 +86,12 @@ Drawer::Drawer(QString username,QWidget *parent,Qt::WindowFlags f) :
     toolBtn5->setAutoRaise(true);//自动浮起
      toolBtn5->setStyleSheet("color:white;font:14pt");
     toolBtn5->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-    if(username=="linyuwei")
-    {
-        is=true;
-        usersnumber=tr(":/images/User5.png");
+    //if(username=="linyuwei")
+   // {
+       // is=true;
+        //usersnumber=tr(":/images/User5.png");
         connect(toolBtn5,SIGNAL(clicked()),this,SLOT(showChatWidget5()));
-    }
+    //}
 
     toolBtn6=new QToolButton;
       toolBtn6->resize(toolBtn1->size());
@@ -101,20 +101,20 @@ Drawer::Drawer(QString username,QWidget *parent,Qt::WindowFlags f) :
     toolBtn6->setAutoRaise(true);//自动浮起
      toolBtn6->setStyleSheet("color:white;font:14pt");
     toolBtn6->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-    if(username=="yangyulin")
-    {
-        is=true;
-        usersnumber=tr(":/images/User6.png");
+    //if(username=="yangyulin")
+    //{
+        //is=true;
+        //usersnumber=tr(":/images/User6.png");
         connect(toolBtn6,SIGNAL(clicked()),this,SLOT(showChatWidget6()));
-    }
+   // }
 
 
-    if(username=="Tan")
+    /*if(username=="Tan")
     {
         is=true;
         usersnumber=tr(":/images/User9.PNG");
         connect(toolBtn9,SIGNAL(clicked()),this,SLOT(showChatWidget9()));
-    }
+    }*/
     toolBtn11=new QToolButton;
     toolBtn11->setIcon(QPixmap(":/images/ico/close.png"));
     toolBtn11->setAutoRaise(true);
@@ -202,21 +202,40 @@ Drawer::Drawer(QString username,QWidget *parent,Qt::WindowFlags f) :
 
 }
 void Drawer::showChatWidget1(){
-
+    chatWidget1=new Widget(0,toolBtn1->text());
+    chatWidget1->setWindowTitle(toolBtn1->text());
+    chatWidget1->setWindowIcon(toolBtn1->icon());
+    chatWidget1->show();
 }
 void Drawer::showChatWidget2(){
-
+    chatWidget2=new Widget(0,toolBtn2->text());
+    chatWidget2->setWindowTitle(toolBtn2->text());
+    chatWidget2->setWindowIcon(toolBtn2->icon());
+    chatWidget2->show();
 }
 void Drawer::showChatWidget3(){
-
+    chatWidget3=new Widget(0,toolBtn3->text());
+    chatWidget3->setWindowTitle(toolBtn3->text());
+    chatWidget3->setWindowIcon(toolBtn3->icon());
+    chatWidget3->show();
 }
 void Drawer::showChatWidget4(){
-
+    chatWidget4=new Widget(0,toolBtn4->text());
+    chatWidget4->setWindowTitle(toolBtn4->text());
+    chatWidget4->setWindowIcon(toolBtn4->icon());
+    chatWidget4->show();
 }
 void Drawer::showChatWidget5(){
-
+    chatWidget5=new Widget(0,toolBtn5->text());
+    chatWidget5->setWindowTitle(toolBtn5->text());
+    chatWidget5->setWindowIcon(toolBtn5->icon());
+    chatWidget5->show();
 }
 void Drawer::showChatWidget6(){
+    chatWidget6=new Widget(0,toolBtn6->text());
+    chatWidget6->setWindowTitle(toolBtn6->text());
+    chatWidget6->setWindowIcon(toolBtn6->icon());
+    chatWidget6->show();
 }
 
 void Drawer::slot_closeWindow()
