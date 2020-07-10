@@ -1,0 +1,5 @@
+﻿  test.cpp
+C:\Users\潘思文\source\repos\test1\test1\test.cpp(11,32): warning C4081: 应输入“newline”；找到“;”
+C:\Users\潘思文\source\repos\test1\test1\test.cpp(73,18): warning C4101: “iLen”: 未引用的局部变量
+C:\Users\潘思文\source\repos\test1\test1\test.cpp(31): warning C4715: “threadrecv”: 不是所有的控件路径都返回值
+  test1.vcxproj -> C:\Users\潘思文\source\repos\test1\Debug\test1.exe
