@@ -1,5 +1,1 @@
-﻿  clienttest.cpp
-C:\Users\潘思文\source\repos\test2\test2\Client.h(10,32): warning C4081: 应输入“newline”；找到“;”
-C:\Users\潘思文\source\repos\test2\test2\clienttest.cpp(9,32): warning C4081: 应输入“newline”；找到“;”
-C:\Users\潘思文\source\repos\test2\test2\clienttest.cpp(26,18): warning C4101: “iLen”: 未引用的局部变量
-  test2.vcxproj -> C:\Users\潘思文\source\repos\test2\Debug\test2.exe
+﻿  test2.vcxproj -> C:\Users\霖霖霖的计算机\Desktop\Three_NeuTalk\SOCKET\Client\test2\Debug\test2.exe
