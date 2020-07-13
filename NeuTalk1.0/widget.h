@@ -27,6 +27,7 @@ protected:
     QString getMsg();
     bool saveFile(const QString &filename);
     void closeEvent(QCloseEvent *event);
+    bool eventFilter(QObject *target, QEvent *event);//事件过滤器
 private:
     Ui::Widget *ui;
     QUdpSocket *udpSocket;

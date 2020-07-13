@@ -10,6 +10,7 @@
 #include"server.h"
 #include"client.h"
 #include<QFileDialog>
+#include <QKeyEvent>
 Widget::Widget(QWidget *parent,QString usrname) :
     QWidget(parent),
     ui(new Ui::Widget)
@@ -19,6 +20,7 @@ Widget::Widget(QWidget *parent,QString usrname) :
    // this->setFixedSize(925,555);
     //this->setStyleSheet("background-image: url(:/images/Color.png)");
     ui->sendBtn->setShortcut(tr("Alt+S"));
+    ui->msgTxtEdit->installEventFilter(this);//设置完后自动调用其eventFilter函数
     uName=usrname;
     udpSocket=new QUdpSocket(this);
     port=23232;
@@ -27,6 +29,9 @@ Widget::Widget(QWidget *parent,QString usrname) :
     sndMsg(UsrEnter);
     srv=new Server(this);
     connect(srv,SIGNAL(sndFileName(QString)),this,SLOT(getFileName(QString)));
+    //按下回车发送消息 没有成功
+    connect(ui->msgTxtEdit,SIGNAL(returnPressed()),ui->sendBtn,SIGNAL(sndMsg()),Qt::UniqueConnection);
+
     connect(ui->msgTxtEdit,SIGNAL(currentCharFormatChanged(QTextCharFormat)),this,SLOT(curFmtChanged(QTextCharFormat)));
 }
 
@@ -322,6 +327,24 @@ bool Widget::saveFile(const QString &filename){
     return true;
 
 }
+
+bool Widget::eventFilter(QObject *target, QEvent *event)
+{
+    if(target == ui->msgTxtEdit)
+    {
+        if(event->type() == QEvent::KeyPress)//回车键
+        {
+             QKeyEvent *k = static_cast<QKeyEvent *>(event);
+             if(k->key() == Qt::Key_Return)
+             {
+                 sndMsg(Msg);
+                 return true;
+             }
+        }
+    }
+    return QWidget::eventFilter(target,event);
+}
+
 
 
 

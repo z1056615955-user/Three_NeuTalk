@@ -16,6 +16,7 @@ Client::Client(QWidget *parent) :
     tPort=5555;
     connect(tClnt,SIGNAL(readyRead()),this,SLOT(readMsg()));
     connect(tClnt,SIGNAL(error(QAbstractSocket::SocketError)),this,SLOT(displayErr(QAbstractSocket::SocketError)));
+
 }
 
 Client::~Client()
