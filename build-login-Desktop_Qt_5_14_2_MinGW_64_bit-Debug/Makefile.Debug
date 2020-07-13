@@ -3171,7 +3171,8 @@ debug/widget.o: ../NeuTalk1.0/widget.cpp ../NeuTalk1.0/widget.h \
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QFileDialog \
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qfiledialog.h \
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/qdir.h \
-		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/qfileinfo.h
+		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/qfileinfo.h \
+		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui/QKeyEvent
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\widget.o ..\NeuTalk1.0\widget.cpp
 
 debug/drawer.o: ../NeuTalk1.0/drawer.cpp ../NeuTalk1.0/drawer.h \

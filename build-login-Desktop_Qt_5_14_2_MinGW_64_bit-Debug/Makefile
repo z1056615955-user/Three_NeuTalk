@@ -248,6 +248,7 @@ Makefile: ../NeuTalk1.0/login.pro D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/win32
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/qt_config.prf \
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/win32-g++/qmake.conf \
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/exclusive_builds.prf \
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/toolchain.prf \
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/default_pre.prf \
@@ -278,7 +279,6 @@ Makefile: ../NeuTalk1.0/login.pro D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/win32
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Network.prl \
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Core.prl \
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/qtmain.prl \
-		.qmake.stash \
 		D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/build_pass.prf \
 		../NeuTalk1.0/myqrc.qrc \
 		../NeuTalk1.0/lang.qrc \
@@ -462,6 +462,7 @@ D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/qt_functions.prf:
 D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/qt_config.prf:
 D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/win32-g++/qmake.conf:
 D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/exclusive_builds.prf:
 D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/toolchain.prf:
 D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/default_pre.prf:
@@ -492,7 +493,6 @@ D:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Sql.prl:
 D:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Network.prl:
 D:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/Qt5Core.prl:
 D:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/qtmain.prl:
-.qmake.stash:
 D:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/features/build_pass.prf:
 ../NeuTalk1.0/myqrc.qrc:
 ../NeuTalk1.0/lang.qrc:

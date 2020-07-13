@@ -328,7 +328,7 @@ bool Widget::saveFile(const QString &filename){
 
 }
 
-bool Widget::eventFilter(QObject *target, QEvent *event)
+bool Widget::eventFilter(QObject *target, QEvent *event)  //过滤回车消息
 {
     if(target == ui->msgTxtEdit)
     {
